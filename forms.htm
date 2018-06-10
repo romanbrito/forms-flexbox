@@ -43,6 +43,8 @@
             font-size: 0.9em;
             text-decoration: none;
             line-height: normal;
+            /*opera bug*/
+            max-height: 3em;
         }
         .form-fields input[type="text"]:focus,
         .form-fields input[type="tel"]:focus,
@@ -55,6 +57,20 @@
             border: 1px solid #C17CCF;
             outline: none;
             background: #f2f2f2;
+        }
+        /*text box*/
+        .form-food textarea {
+            display: block;
+            box-sizing: border-box;
+            font: 0.9em Lato, Helvetica, sans-serif;
+            width: 90%;
+            height: 6em;
+            overflow: auto;
+            padding: 0.6em 0.8em;
+            color: #999;
+            background: #f7f7f7;
+            border: 1px solid #e1e1e1;
+            line-height: normal;
         }
         .register-btn {
             border-radius: 0px 2px 2px 0px;
