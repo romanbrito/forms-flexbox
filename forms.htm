@@ -5,7 +5,6 @@
     <title>long forms</title>
     <link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
     <style>
-
         .register-form {
             line-height: 1.4;
         }
@@ -88,6 +87,23 @@
         .register-btn:hover, .register-btn:focus {
             background: #C17CCF;
         }
+        /*flex it*/
+        .form-fields li {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .form-fields input[type="text"],
+        .form-fields input[type="tel"],
+        .form-fields input[type="url"],
+        .form-fields input[type="email"],
+        .form-fields input[type="number"],
+        .form-fields select {
+            flex: 1 0 230px;
+        }
+        .form-fields label {
+            flex: 1 0 90px;
+        }
+        /*320 smaillest view port I am targeting*/
 
     </style>
 </head>
