@@ -5,7 +5,35 @@
     <title>short forms</title>
     <link rel="stylesheet" href="_css/base.css">
     <style>
-
+        input[type="search"] {
+            box-sizing: border-box;
+            background: #E9E9E9;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0.35em 0.75em;
+            border: none;
+            font-size: 1.1em;
+            text-decoration: none;
+            line-height: normal;
+            max-height: 3em;
+        }
+        button[type="submit"] {
+            box-sizing: border-box;
+            border-radius: 0px 2px 2px 0px;
+            background: #8B798C;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: white;
+            padding: 0.35em 0.75em;
+            border: none;
+            font-size: 1.1em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background: #C17CCF;
+        }
     </style>
 </head>
 <body>
@@ -17,7 +45,7 @@
 </header>
 <article class="example">
     <form class="search-form">
-        <input type="text" name="search" placeholder="Search this site" class="search-input">
+        <input type="search" name="search" placeholder="Search this site" class="search-input">
         <button type="submit" class="search-btn">Search</button>
     </form>
 </article>
