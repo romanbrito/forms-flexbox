@@ -134,6 +134,17 @@
         .form-workshop li {
             flex: 1 0 200px;
         }
+        /*to remove body margin in small screens*/
+        @media (max-width: 480px) {
+            body{
+                width: 100%;
+                margin: 0;
+                padding: 0 0 2em;
+            }
+            header, .form-submit {
+                padding: 2% 5%;
+            }
+        }
     </style>
 </head>
 <body>
